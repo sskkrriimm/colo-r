@@ -1,0 +1,22 @@
+mode=drun
+allow_images=true
+image_size=20
+width=25%
+height=93%
+term=alacritty
+columns=1
+gtk_dark = true
+no_actions = true
+prompt= search...
+normal_window = false
+hide_scroll = true
+insensitive = true
+filter_rate = 500
+
+dynamic_lines = true
+
+halign = center
+
+line_wrap = word
+
+xoffset = 0px

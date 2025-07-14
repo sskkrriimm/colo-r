@@ -1,0 +1,64 @@
+{
+	"layer": "top",
+	"modules-left":
+		["hyprland/workspaces", "hyprland/window"],
+	"modules-center": ["clock"],
+	"modules-right": ["tray", "wireplumber", "network"],
+	
+	"tray": {
+		"icon-size": 16,
+		"spacing": 10,
+	},
+
+	"clock": {
+		"format": "{:%I:%M %p}",
+		"format-alt": "{:%Y-%m-%d}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+			"calendar": {
+				"mode": "year",
+				"mode-mon-col": 3,
+				"week-pos": "none",
+				"on-scroll": 1, 
+				"format": {
+					"months": "<span color='#7ca7b2'><b>{}</b></span>",
+					"days": "<span color='#ffffff'>{}</span>",
+					"weekdays": "<span color='#7f895f'><b>{}</b></span>",
+					"today": "<span color='#e76f51'><b><u>{}</u></b></span>"
+				}
+			},
+	},
+
+	"wireplumber": {
+		"format": "󰝚 {volume}%",
+		"format-muted": "󰝛 shh",
+		"scroll-step": 2,
+		"on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+		"on-click-middle": "flatpak run com.saivert.pwvucontrol",
+		"tooltip": "@DEFAULT_AUDIO_SINK@"
+	},
+
+	"network": {
+		"interval": "1",
+		"format": "{essid}",
+		"format-ethernet": " {bandwidthDownBits} |  {bandwidthUpBits}",
+		"format-disconnected": "offline",
+		"tooltip-format-ethernet": "{ipaddr} @ {ifname}"
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"onclick": "activate",
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+		},
+	},
+
+	"hyprland/window": {
+		"format": "{}",
+		"max-length": 40,
+	},
+}

@@ -1,0 +1,98 @@
+* {
+	font-family: SpaceMonoNerdFontMono;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 2;
+}
+
+.modules-left {
+	margin-left: 10px;
+}
+
+.modules-right {
+	margin-right: 10px;
+}
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#wireplumber,
+#tray,
+#custom-media {
+	padding: 0 10px;
+	margin: 0 5px;
+}
+
+#clock {
+	color: rgba(74, 87, 89, 1);
+	background-color: rgba(190,227,219, 1);
+}
+
+#network {
+	background-color: rgba(124, 167, 178, 1);
+	color: rgba(74, 87, 89, 1);
+}
+
+#wireplumber {
+	color: rgba(74, 87, 89, 1);
+	background-color: rgba(127,137,95, 1);
+}
+
+#tray {
+	color: rgba(74, 87, 89, 1);
+	border-bottom: 2px solid rgba(233, 196, 106, 1);
+}
+
+window#waybar {
+	background-color: rgba(74,87,89, 1);
+	color: #fff;
+}
+
+#window,
+#workspaces {
+	padding: 0 0;
+}
+
+#window {
+	margin: 0 20px;
+	padding: 0 2px;
+	border-bottom: 2px solid rgba(207,178,229, 1);
+	color: #fff;
+}
+
+#workspaces button {
+	color: rgba(255, 255, 255, 1);
+	margin: 2;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+#workspaces button:hover {
+	box-shadow: none;
+	background-color: transparent;
+	text-shadow: inherit;
+	background: none;
+	border-bottom: 2px solid rgba(231, 111, 81, 1);
+	border-radius: 0;
+	transition: none;
+}
+
+#workspaces button.active {
+	background-color: rgba(231,111,81, 1);
+	color: rgba(74, 87, 89, 1);
+	border-radius: 0;
+}
+
+#workspaces button.empty {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
