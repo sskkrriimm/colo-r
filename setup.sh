@@ -63,7 +63,7 @@ if [ ${paperDir} ]; then
 		echo "Updating hyprpaper config..."
 		echo "preload = ${wpDir}4a5759.png" > ${paperDir}
 		echo "wallpaper =, ${wpDir}4a5759.png" > ${paperDir}
-		"hyprpaper configred (◡‿◡✿) ..."
+		echo "hyprpaper configred (◡‿◡✿) ..."
 	else
 		echo "Placing wallpaper in ~/Pictures..."
 		cp "${workingDir}/wallpaper/"* ~/"Pictures"
@@ -71,7 +71,7 @@ if [ ${paperDir} ]; then
 		echo "Updating hyprpaper config..."
 		echo "preload = ~/Pictures/4a5759.png" > ${paperDir}
 		echo "wallpaper =, ~/Pictures/4a5759.png" > ${paperDir}
-		"hyprpaper configred (◡‿◡✿) ..."
+		echo "hyprpaper configred (◡‿◡✿) ..."
 	fi
 else
 	echo "Checking dirs..."
@@ -82,7 +82,7 @@ else
 		echo "Creating hyprpaper config..."
 		echo "preload = ${wpDir}4a5759.png" > ${paperDir}
 		echo "wallpaper =, ${wpDir}4a5759.png" > ${paperDir}
-		"hyprpaper configred (◡‿◡✿) ..."
+		echo "hyprpaper configred (◡‿◡✿) ..."
 	else
 		echo "Placing wallpaper in ~/Pictures..."
 		cp "${workingDir}wallpaper/"* ~/"Pictures"
@@ -90,7 +90,7 @@ else
 		echo "Creating hyprpaper config..."
 		echo "preload = ~/Pictures/4a5759.png" > ${paperDir}
 		echo "wallpaper =, ~/Pictures/4a5759.png" > ${paperDir}
-		"hyprpaper configred (◡‿◡✿) ..."
+		echo "hyprpaper configred (◡‿◡✿) ..."
 	fi
 	sleep 1
 	"hyprpaper configred (◡‿◡✿) ..."
